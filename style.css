@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(129, 201, 147);
+}
+.header{
+    padding: 20px 0;
+    display: flex;
+    background-color: rgba(25, 83, 11, 0.5);
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+.header ul{
+    list-style: none;
+}
+.option-format{
+    display: inline-block;
+    border: 3px solid black;
+    margin-left: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2em;
+}
+.option-format:hover{
+    cursor: pointer; 
+}
+.main {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px); 
+    /* grid-gap: 10px 10px; */
+    justify-content: center;
+    align-content: center;
+}
+
+.item-main{
+    display: grid;
+    background-color: rgb(105, 129, 99);
+    color: white;
+    border-radius: 3px;
+    justify-content: center;
+    align-content: center;
+    font-size: 10em;
+    border: 3px solid #000;
+    cursor: pointer;
+
+    transition: background 0.5s;
+}
+.item-main:hover{
+    background-color: rgb(81, 92, 78);
+}
+.item-main:nth-child(1){
+    border-left: transparent;
+    border-top: transparent;
+}
+.item-main:nth-child(2){
+    border-top: transparent;
+}
+.item-main:nth-child(3){
+    border-right: transparent;
+    border-top: transparent;
+}
+.item-main:nth-child(4){
+    border-left: transparent;
+}
+.item-main:nth-child(6){
+    border-right: transparent;
+}
+.item-main:nth-child(7){
+    border-left: transparent;
+    border-bottom: transparent;
+}
+.item-main:nth-child(8){
+    border-bottom: transparent;
+}
+.item-main:nth-child(9){
+    border-right: transparent;
+    border-bottom: transparent;
+}
+.painel-restart{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 300px;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(90, 110, 85, 0.5);
+    background-color: rgb(119, 105, 80);
+    justify-content: space-around;
+    align-items: center;
+}
+.painel-restart h1{
+    color: white;
+    border-bottom: 2px solid  rgb(23, 32, 23);
+    border-top: 2px solid  rgb(23, 32, 23);
+    padding:0 5px;
+}
+.painel-restart b{
+    display: inline-block;
+    font-weight: bolder;
+    color: rgb(12, 12, 71);
+    font-size: 2em;
+    padding: 0 3px;
+}
+.painel-restart button{
+    background-color: rgb(176, 206, 176);
+    border: none;
+    padding: 40px 70px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 2em;
+    transition: all 0.5s;
+}
+.painel-restart button:hover{
+    background-color: rgba(165, 175, 162, 0.5);
+    box-shadow: 2px 2px 4px black;
+}
