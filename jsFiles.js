@@ -34,9 +34,10 @@ main.addEventListener('click',(e)=>{
 function setXO(cell){
     for(var i = 0;i<listOpt.length;i++){
         if(listOpt[i].style.background == "rgb(52, 84, 52)"){
+            if(cell.textContent=="")
             cell.textContent = listOpt[i].textContent
+
             var cellTableGameOld = document.getElementsByClassName('item-main')
-            console.log(cellTableGameOld[0].textContent)
             if(cellTableGameOld[0].textContent!="" && cellTableGameOld[0].textContent==cellTableGameOld[1].textContent && cellTableGameOld[1].textContent==cellTableGameOld[2].textContent)
                 callPainelRestartGame(cellTableGameOld[0].textContent)
             if(cellTableGameOld[3].textContent!="" && cellTableGameOld[3].textContent==cellTableGameOld[4].textContent && cellTableGameOld[4].textContent==cellTableGameOld[5].textContent)
