@@ -67,6 +67,7 @@ function callPainelRestartGame(winner){
     main.style.display = "none";
     painelRestart.style.display = "flex"
 }
+
 function restartGame(){
     main.style.display = "grid";
     painelRestart.style.display = "none"
